@@ -88,6 +88,17 @@
             return `${sum} ${currentValue}`
         })
         console.log(epicPhrase);
+
+        //Exercici 4- Crear una funció que accepti un string i retornada aquest string revertit. 
+        //Nota: Usar funció fletxa (arrow functions), l'operador de prograpación (spread operator) y el mètode .reverse()
+        let nom = "Victor";
+        let reverseString = (string) => {
+            let arrayString = [...string];
+            let stringReversed = arrayString.reverse();
+            return stringReversed.join('');
+        }
+        console.log(reverseString(nom));
+
     </script>
 </body>
 
