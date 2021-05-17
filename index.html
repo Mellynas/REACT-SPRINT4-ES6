@@ -8,24 +8,26 @@
 <body>
     <script>
         //Exercici 1. Converteix a funcions fletxa:
-       // function multiply(num1, num2) {
-            //return num1 * num2;
+        // function multiply(num1, num2) {
+        //return num1 * num2;
         //}console.log(multiply);
-        multiply = (num1,num2) =>  num1*num2
-        console.info (multiply(5,5));
+        multiply = (num1, num2) => num1 * num2
+        console.info(multiply(5, 5));
+
         //function toCelsius(fahrenheit) {
-            //return (5 / 9) * (fahrenheit - 32);
+        //return (5 / 9) * (fahrenheit - 32);
         //} console.log(toCelsius)
-         toCelsius = (fahrenheit) => (5 / 9) * (fahrenheit - 32);
-        console.info (toCelsius (60));
+        toCelsius = (fahrenheit) => (5 / 9) * (fahrenheit - 32);
+        console.info(toCelsius(60));
+
         // Esta función devuelve una cadena rellenada con ceros a la izquierda
         //function padZeros(num, totalLen) {
-           // var numStr = num.toString();
-           // var numZeros = totalLen - numStr.length;
-           // for (var i = 1; i <= numZeros; i++) {
-                //numStr = "0" + numStr;
-            //}
-            //return numStr;
+        // var numStr = num.toString();
+        // var numZeros = totalLen - numStr.length;
+        // for (var i = 1; i <= numZeros; i++) {
+        //numStr = "0" + numStr;
+        //}
+        //return numStr;
         //}
         padZeros = (num, totalLen) => {
             let numStr = num.toString();
@@ -33,26 +35,53 @@
             for (var i = 1; i <= numZeros; i++) {
                 numStr = "0" + numStr;
             }
-            console.info (numStr);
+            console.info(numStr);
         }
+
         //function power(base, exponent) {
-            //var result = 1;
-            //for (var i = 0; i < exponent; i++) {
-                //result *= base;
-           //}
-            //return result;
+        //var result = 1;
+        //for (var i = 0; i < exponent; i++) {
+        //result *= base;
+        //}
+        //return result;
         //}
         power = (base, exponent) => {
             let result = 1;
             for (let i = 0; i < exponent; i++) {
                 result *= base;
             }
-            console.info (result);
+            console.info(result);
         }
+
         //function greet(who) {
-            //console.log("Hello " + who);
+        //console.log("Hello " + who);
         //}
-        greet = (who) => console.info ("Hello " + who);
+        greet = (who) => console.info("Hello " + who);
+
+        //Exercici 2- Arregla l'error del següent bloc de codi:
+        //users.map(function (user) {
+        // user.firstName;
+        // });
+        // var users =
+        //[{ firstName: 'Homer', lastName: 'Simpson' },
+        //{ firstName: 'Marge', lastName: 'Simpson' },
+        // { firstName: 'Bart', lastName: 'Simpson' },
+        //{ firstName: 'Lisa', lastName: 'Simpson' },
+        // { firstName: 'Maggie', lastName: 'Simpson' }];
+
+        let users =
+            [{ firstName: 'Homer', lastName: 'Simpson' },
+            { firstName: 'Marge', lastName: 'Simpson' },
+            { firstName: 'Bart', lastName: 'Simpson' },
+            { firstName: 'Lisa', lastName: 'Simpson' },
+            { firstName: 'Maggie', lastName: 'Simpson' }];
+        let usersFirstName = users.map((user) => {
+            return user.firstName;
+        });
+        console.log(usersFirstName);
+
+
+
     </script>
 </body>
 
